@@ -1,15 +1,14 @@
 pipeline {
-    agent any
-    stages{
+    node {
         stage("one") {
             steps{
-                script{
-                    try{
-                        method2()
-                    }catch(exc){
-                        echo "fails"
-                    }
+         
+                try{
+                    method2()
+                }catch(exc){
+                    echo "fails"
                 }
+        
             }
         }
     }
