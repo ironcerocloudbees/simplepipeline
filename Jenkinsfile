@@ -1,8 +1,7 @@
 node {
     stage("one") {
-
         try{
-            method2()
+            sh 'exit 1'
         }catch(exc){
             echo "fails"
         }
