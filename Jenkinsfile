@@ -2,7 +2,7 @@ node {
     stage("one") {
         try{
             method1()
-        }catch(Exception exc){
+        }catch(NoSuchMethodError exc){
             echo "fails"
         }
     
